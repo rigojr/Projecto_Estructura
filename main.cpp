@@ -16,6 +16,7 @@ void main() {
 	int cantidad_lineas;
 	int cantidad_etiqueta;
 	int cantidad_bloques;
+	int cantidad_lineas_conjunto;
 	while (op != 99) {
 		system("cls");
 		printMain();//menu principal
@@ -56,6 +57,18 @@ void main() {
 				imprimirVector(vector);
 				printf("\n");
 				break;
+			case 2:
+				system("cls");
+				printf("MAPEO ASOCIATIVO POR CONJUNTO");
+				cantidad_palabra = potenciasDeDos(tamaBloque);
+				cantidad_lineas = potenciasDeDos(memoCache) - cantidad_palabra;
+				cantidad_lineas_conjunto = cantidad_lineas - potenciasDeDos(asoBloque);
+				cantidad_bloques = potenciasDeDos(memoPpal) - cantidad_palabra;
+				cantidad_etiqueta = cantidad_bloques - cantidad_lineas_conjunto;
+				printf("\n\t[ Etiqueta ]\t[ Conjunto ]\t[ Palabra ]\n\n");
+				crearVector(cantidad_etiqueta, cantidad_lineas_conjunto, cantidad_palabra, -1, &vector);
+				imprimirVector(vector);
+				printf("\n");
 			}
 			system("pause");
 			break;

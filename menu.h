@@ -53,10 +53,10 @@ void printTamaBloque(){
 
 void printTamaBloque_asociativo() {
 	printf("\n - Tamano del Conjunto en Bloques: \n");
-	printf("\n 2B = 64 \n");
-	printf("\n 4B = 128 \n");
-	printf("\n 8B = 256 \n");
-	printf("\n 16B = 512 \n");
-	printf("\n 32B = 1 \n");
+	printf("\n 2B = 2 \n");
+	printf("\n 4B = 4 \n");
+	printf("\n 8B = 8 \n");
+	printf("\n 16B = 16 \n");
+	printf("\n 32B = 32 \n");
 	printf("Tu Respuesta = ");
 }

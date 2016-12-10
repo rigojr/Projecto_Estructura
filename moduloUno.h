@@ -32,7 +32,28 @@ void crearVector(int e, int l, int p, int num, lista **vector) {
 		}
 	}
 	else {
-		//falta hacer la funcion dijito por digito
+		for (int i = 0; i < (e + l + p); i++)
+		{
+			int bit=0;
+			if (p > i) {
+				bandera = 1;
+			}
+			else {
+				if (l + p > i) {
+					bandera = 2;
+				}
+				else
+					bandera = 3;
+			}
+			if (num > 0) {
+				bit = num % 10;
+				num = num / 10;
+			}
+			if (!vector)
+				insertarCola(vector, bit, bandera);
+			else
+				insertarCabeza(vector, bit, bandera);
+		}
 	}
 }
 

@@ -4,12 +4,18 @@ void printMain() {
 	printf("\n--- SIMULACION DE LA MEMORIA CACHE ---");
 	printf("\n--- MENU PRINCIPAL ---\n");
 	printf("\n1. Funcion de Mapeo, MODULO 1:\n");
+	printf("\n2. Ubicacion de Bloques, MODULO 2:\n");
 	printf("\n99.SALIR\n");
 }
 
 void printM1() {
 	printf("\n--- FUNCION DE MAPEO ---\n");
 	printf("\n--- MODULO 1 ---\n");
+}
+
+void printM2() {
+	printf("\n--- UBICACION DE BLOQUES ---\n");
+	printf("\n--- MODULO 2 ---\n");
 }
 
 void printTipoMapeo() {
@@ -58,5 +64,10 @@ void printTamaBloque_asociativo() {
 	printf("\n 8B = 8 \n");
 	printf("\n 16B = 16 \n");
 	printf("\n 32B = 32 \n");
+	printf("Tu Respuesta = ");
+}
+
+void printDireccion() {
+	printf("\n - Direccion de Memoria en decimal: \n");
 	printf("Tu Respuesta = ");
 }
